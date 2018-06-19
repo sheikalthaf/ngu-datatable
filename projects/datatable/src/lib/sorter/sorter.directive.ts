@@ -1,16 +1,14 @@
 import {
-  Directive,
-  ContentChildren,
-  QueryList,
-  EventEmitter,
-  Output,
+  AfterContentInit,
   ContentChild,
-  AfterContentInit
+  ContentChildren,
+  Directive,
+  QueryList
 } from '@angular/core';
 import * as _ from 'lodash';
 import { SortData } from './../datatable';
-import { NguSortHeader } from './sorter.component';
 import { NguDataTable } from './../datatable/datatable.component';
+import { NguSortHeader } from './sorter.component';
 
 // tslint:disable-next-line:directive-selector
 @Directive({ selector: '[nguSort]', exportAs: 'nguSort' })

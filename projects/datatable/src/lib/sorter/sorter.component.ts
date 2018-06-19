@@ -1,6 +1,6 @@
-import { Input, OnInit, Output, HostListener, Component } from '@angular/core';
-import { SortData } from './../datatable';
+import { Component, HostListener, Input, Output } from '@angular/core';
 import { Subject } from 'rxjs';
+import { SortData } from './../datatable';
 
 @Component({
   // tslint:disable-next-line:component-selector
