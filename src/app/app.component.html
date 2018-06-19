@@ -1,0 +1,22 @@
+<ngu-table [dataSource]="dataSource" #mytable nguSort>
+  <table>
+    <thead>
+      <tr>
+        <th ngu-sort-header="name">Home</th>
+        <th ngu-sort-header="des">About</th>
+        <th ngu-sort-header="location">Contact</th>
+        <th ngu-sort-header="project">Service</th>
+        <th ngu-sort-header="exper">blog</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of mytable.tableData">
+        <td>{{row.name}}</td>
+        <td>{{row.des}}</td>
+        <td>{{row.location}}</td>
+        <td>{{row.project}}</td>
+        <td>{{row.exper}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ngu-table>
